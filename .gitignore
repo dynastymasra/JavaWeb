@@ -1,0 +1,50 @@
+###############
+# Java Config #
+###############
+*.jar
+*.war
+*.class
+
+*.jasper
+
+###################
+# Intellij Config #
+###################
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea
+.idea/**/*
+.settings
+###########################
+# Project Intellij Config #
+###########################
+module_*.xml
+#server.properties
+#server.xml
+
+################
+# maven config #
+################
+target
+
+###################
+# Netbeans config #
+###################
+lib
+nbactions.xml
+nb-configuration.xml
+catalog.xml
+
+####################
+# Compression file #
+####################
+*.zip
+*.rar
+
+####################
+# H2 Database File #
+####################
+
+database/*

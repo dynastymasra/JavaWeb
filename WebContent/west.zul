@@ -1,0 +1,12 @@
+<zk>
+<div>
+					<calendar style="margin:10px"/>
+					<label id="now"/>
+    				<timer repeats="true">
+        				<attribute name="onTimer">
+    						now.setValue(""+ new Date().toLocaleString());
+						</attribute>
+    				</timer>
+				</div>
+
+</zk>

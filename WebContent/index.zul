@@ -1,0 +1,80 @@
+<?page title="Java Study Club"?>
+<?link rel="shortcut icon" type="image/x-icon" href="image/title.ico"?>
+<zk>
+	<div align="center" style="background:#000000">
+		<borderlayout width="1000px" height="200px" style="background:#000000">
+			<north margins="25,0,0,0" style="background:#CCCCCC" height="200px">
+				
+			</north>
+		</borderlayout>
+		<borderlayout width="1000px" height="835px" style="background:#000000">
+			<north title="Menu" style="background:#CCCCCC" collapsible="true" height="135px" border="none">
+				<div>
+					<div height="15px" style="background:#000000"/>
+					<div height="15px" style="background:#FF6600"/>
+					<div height="50px" style="background:#CCCCCC">
+						<fisheyebar style="position:center" itemWidth="50" itemHeight="50" itemMaxHeight="70" itemMaxWidth="70">
+        					<fisheye label="Home" image="/image/menu/home.png" onClick='main.src = "/timeout.zul"'/>
+        					<fisheye label="Profile" image="/image/menu/profile.png" onClick='main.src = "/timeout.zul"'/>
+        					<fisheye label="Agenda" image="/image/menu/agenda.png" onClick='main.src = "/west.zul"'/>
+        					<fisheye label="News" image="/image/menu/news.png" onClick='main.src = "/west.zul"'/>
+        					<fisheye label="Download" image="/image/menu/download.png" onClick='main.src = "/west.zul"'/>
+        					<fisheye label="Gallery" image="/image/menu/gallery.png" onClick='main.src = "/west.zul"'/>
+        					<fisheye label="Registration" image="/image/menu/new.png" onClick='execution.sendRedirect("/registration.zul")'/>
+        					<fisheye label="Search" image="/image/menu/search.png" onClick='main.src = "/west.zul"'/>
+    					</fisheyebar>
+					</div>
+					<div height="15px" style="background:#FF6600"/>
+					<div height="15px" style="background:#000000"/>
+				</div>
+			</north>
+			<west width="730px" style="background:#CCCCCC">
+				<div>
+					<include id="main" src="/west.zul" style="margin:10px"/>
+				</div>
+			</west>
+			<east size="250px" style="background:#CCCCCC">
+				<div>
+					<div>
+						<calendar style="margin:10px"/>
+						<label id="now"/>
+    					<timer repeats="true">
+        					<attribute name="onTimer">
+    							now.setValue(""+ new Date().toLocaleString());
+							</attribute>
+    					</timer>
+					</div>
+					<div>
+						<window title="Contact Us" style="background:#FF6600">
+							<div>
+								<button target="_blank" href="http://www.facebook.com/groups/300107413339417/" image="/image/sample/facebook.png" tooltiptext="Facebook"/>
+								<button target="_blank" href="http://mail.google.com/" image="/image/sample/gmail.png" tooltiptext="Gmail"/>
+								<button target="_blank" href="http://mail.yahoo.com/" image="/image/sample/yahoo.png" tooltiptext="Yahoo Mail"/>		
+							</div>
+							<div>
+								<vbox>
+									zdfasdfsdfds
+								</vbox>
+							</div>
+						</window>
+					</div>
+				</div>
+			</east>		
+			<south style="background:#CCCCCC" title="Copyright © by Java Study Club. All rights reserved (Ahmad Dahlan University)" collapsible="true" size="111px" margins="15,0,0,25" border="none">
+				<div>
+					<div height="15px" style="background:#FF6600"/>
+					<div  style="background:#CCCCCC">
+						<toolbarbutton image="/image/footer/tif.png" height="50" width="50" target="_blank" tooltiptext="Informatics Engineering Ahmad Dahlan University" href="http://tif.uad.ac.id/"/>
+						<toolbarbutton image="/image/footer/hmtif.png" height="50" width="50" target="_blank" tooltiptext="HMTIF" href="http://hmtif.student.uad.ac.id/"/>
+						<toolbarbutton image="/image/footer/eclipse.png" height="50" width="50" target="_blank" tooltiptext="eclipse" href="http://www.eclipse.org/"/>
+						<toolbarbutton image="/image/footer/netbeans.png" height="50" width="50" target="_blank" tooltiptext="NetBeans" href="http://netbeans.org/"/>
+						<toolbarbutton image="/image/footer/android.png" height="50" width="50" target="_blank" tooltiptext="Android" href="http://developer.android.com/"/>
+						<toolbarbutton image="/image/footer/zkoss.png" height="50" width="50" target="_blank" tooltiptext="Zkoss" href="http://www.zkoss.org/"/>
+					</div>
+					<div height="15px" style="background:#FF6600"/>
+				</div>
+			</south>
+		</borderlayout>
+	</div>
+</zk>
+                        
